@@ -3,7 +3,7 @@
     <head>
         <title>Image To Speech</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection">
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -12,6 +12,15 @@
     </head>
     <body>
         <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
         h1 {
             text-align: center;
             color: #fcfdff;
@@ -59,7 +68,7 @@
                 <div id="imageDiv" style="width:420px; display:table-cell;">
                     <h4>Source image:</h4>
                     <br><br>
-                    <img id="sourceImage" width="400"/>
+                    <img id="sourceImage" width="400" style="position:absolute; height:auto">
                 </div>
             </div>
         </div>
