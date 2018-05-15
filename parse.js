@@ -7,7 +7,7 @@ function processImage() {
     // *** Update or verify the following values. ***
     // **********************************************
     // Replace the subscriptionKey string value with your valid subscription key.
-    var subscriptionKey = "53cd5ed1215f4ccd952a53a3b122ab4b";
+    var subscriptionKey = "506ab9d261594494a48a08c59afc944a";
     // Replace or verify the region.
     //
     // You must use the same region in your REST API call as you used to obtain your subscription keys.
