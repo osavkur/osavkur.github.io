@@ -1,3 +1,5 @@
+//TODO: 1) Add link option 2) Add "undefined" check so it doesn't say it 3) Profit...?
+
 var parsed;
 var xhr = new XMLHttpRequest();
 var err_modal = document.getElementById('err_modal');
