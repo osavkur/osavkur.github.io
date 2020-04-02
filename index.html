@@ -1,100 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>1000 Words</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>    <meta charset="UTF-8">
-    </head>
-    <body>
-        <style>
-        h1 {
-            text-align: center;
-            color: #fcfdff;
-            background-color: #795b82;
-        }
-        h4 {
-            text-align: center;
-            margin-left:20%;
-            margin-right:20%;
-            color: #fcfdff;
-            background-color: #795b82;
-        }
-        p {
-            text-align: center;
-            color: #fff;
-        }
-        html {
-            background-color: grey;
-        }
-        ::placeholder {
-            color: black;
-        }
-        </style>
-        <div class="container">    
-            <h1 class="z-depth-5">1000 Words</h1>
-            <div class="divider"></div>
-            <p>Select an image, then click the <strong>Analyze image</strong> button to have the image description read to you.</p>
-            <div id="buttons_n_stuff" style="display:block" class="row">
-                <select id="input" name="inputMethod" class="waves-effect waves-light btn">
-                    <option value="none">Select Input Method</option>
-                    <option value="upload">Upload Image</option>
-                    <option value="webImage">Web Image</option>
-                    <option value="stream">Live Stream</option>
-                </select>
-            </div>
-            <div class="row center-align">
-                <div id="chooseImage">
-                    <p>Upload images by clicking the "Upload Image" button, and then analyze them with the "Analyze Image" button.</p>
-                    <p>Wait a few seconds and then the website will say what's in the picture.</p>
-                    <div class="file-field btn">
-                        <span>Upload Image</span>
-                        <input id="img" type="file" accept="image/png,image/jpg,image/jpeg">
-                    </div>
-                    <button id="processImageUpload" class="btn">Analyze image</button>
-                </div>
-                <div id="webImage">
-                    <p>Paste the link of the image you want to analyze in the text area, and then analyze it with the "Analyze Image" button.</p>
-                    <p>Wait a few seconds and then the website will say what's in the picture.</p>
-                    <input type="text" id="webUrl" class="waves-effect waves-light" style="background:#C0C0C0;" placeholder="Enter URL here...">
-                    <button id="processImageWeb" class="waves-effect waves-light btn">Analyze image</button>
-                </div>
-                <div class="stream">
-                    <p>Press the "Analyze Stream" button to start analyzing the live webcam stream.</p>
-                    <p>Press the "Stop Analyze Stream" button to stop analyzing the live webcam stream.</p>
-                    <button id="processImageStream" class="waves-effect waves-light btn">Analyze Web Cam Stream </button>
-                    <button id="stopProcessStream" class="waves-effect waves-light btn">Stop Analyzing Stream</button>
-                </div>
-            </div>
-                <!--<div id="jsonOutput" style="width:600px; display:table-cell;">
-                    Response:
-                    <br><br>
-                    <textarea id="responseTextArea" class="UIInput" style="width:580px; height:400px;"></textarea>
-                </div>-->
-            <div id="imageDiv" class="row">
-                <h4>Source image:</h4>
-                <br>
-                <img id="sourceImage" width="400"/>
-            </div>
-            <div class="stream" class="center-align">
-                <video autoplay="true" id="videoElement"></video>
-                <canvas id="canvas" style="visibility: hidden"></canvas>
-            </div>
-            <div id="err_modal" class="modal">
-                <div class="modal-content">
-                    <h4>An Error Has Occured Loading The Image</h4>
-                </div>
-                <div class="modal-footer">
-                    <button id="hide_modal" class="waves-effect waves-light btn">HEHE XD</button>
-                </div>
-            </div>
-        </div>
-        <script src="parse.js"></script>
-        <script src="speak.js"></script>
-        <script src="upload.js"></script>
-        <script src="choose.js"></script>
-        <script src="stream.js"></script>
-        <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-    </body>
+<head>
+    <title>God
+    </title>
+</head>
+<body>
+    <button id="reset">Reset</button>
+    <canvas id="canvas" width="100" height="100" style="background-color:white"></canvas>
+    <script>
+    window.onload = function () {
+        var canvas = document.getElementById("canvas");
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial";
+        document.getElementById("reset").addEventListener('click', function(event) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }, false);
+        canvas.addEventListener('click', function(event) {
+            ctx.fillText("GOD", event.pageX, event.pageY);
+        }, false);
+        
+    };
+    </script>
+</body>
 </html>
